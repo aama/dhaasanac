@@ -20,10 +20,11 @@
 	  :polarity [:Affirmative, :Negative]
 	  :pos [:Pronoun, :Verb]
 	  :proClass [:Independent]
+           :status [:NA]
 	  :tam [:Dependent, :Imperative, :Imperfect, :Past, :Perfect, :ShortPast, :VerbalNoun, :U]
 	  :verbMorphClass [:DervStemMarker, :NonCrnlDrop, :StemFormation]
 	  :verbType [:Finite, :VerbalNoun]
-	  }
+           }
 :morphemes {
   :CAUS2STEM {:gloss "[x]", :lemma "[y]", }
   :PRO {:gloss "[x]", :lemma "[y]", }
@@ -97,7 +98,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-             :person :Person2}
+             :person :Person2
+            :gender :Common}
      :terms [[:number, :token]  ;; schema
 	    [:Plural, "boló"],
 	    [:Singular, "bólob"]]
@@ -112,7 +114,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "buolomíi"],
 	    [:Singular, "buolómu"]]
@@ -127,7 +130,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ɠúoliɲ"]]
     }
@@ -152,8 +156,7 @@
             [:PngB, :Common, :Plural, :Person2, "kufunan"]]
     }
     {:label "dhaasanac-VSuffBaseIntensRedNasNegImprtv-guol"
-    :note "Tosco2001b-p. 173;ɠ ~ ʔ alternation base imprtv pl and all forms of intens (base
-            and caus)"
+    :note "Tosco2001b-p. 173;ɠ ~ ʔ alternation base imprtv pl and all forms of intens (base and caus)"
     :common {:conjClass :Suffix,
 	    :derivedStem :Base,
 	    :derivedStemAug :Intensive,
@@ -162,7 +165,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ʔóggolmiɲ"]]
     }
@@ -190,7 +194,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "yegesíi"],
 	    [:Singular, "ʔáagas"]]
@@ -258,7 +263,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "yeegelíi"],
 	    [:Singular, "yáagal ~ yéegel"]]
@@ -325,8 +331,9 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
-:terms [[:number, :token]  ;; schema
+             :person :Person2
+            :gender :Common}
+     :terms [[:number, :token]  ;; schema
 	    [:Singular, "sáanik"],
 	    [:Plural, "saanía"]]
     }
@@ -354,7 +361,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ɗarrámu"],
 	    [:Plural, "ɗarramíi"]]
@@ -370,7 +378,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["saanmísiš"]]
     }
@@ -384,7 +393,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)gíediɲ"]]
     }
@@ -398,7 +408,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha(hí)(ká) címen"]]
     }
@@ -519,7 +530,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) búoiɲ"]]
     }
@@ -766,7 +778,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔúfuk"],
 	    [:Plural, "ʔufuá ~ ʔufeé"]]
@@ -805,7 +818,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔeebitíi"],
 	    [:Singular, "ʔeebísu"]]
@@ -872,7 +886,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔuufúmiɲ"]]
     }
@@ -959,7 +974,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "-"],
 	    [:Singular, "fáaɠ"]]
@@ -1022,7 +1038,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)laalámiɲ"]]
     }
@@ -1199,7 +1216,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔísiš"]]
     }
@@ -1233,7 +1251,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) bóloɲ"]]
     }
@@ -1247,7 +1266,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "kúokom"],
 	    [:Plural, "-"]]
@@ -1367,7 +1387,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔargiɲ"]]
     }
@@ -1395,7 +1416,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "saanímu"],
 	    [:Plural, "saanimíi"]]
@@ -1430,7 +1452,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔík"],
 	    [:Plural, "ʄía"]]
@@ -1493,7 +1516,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)buolómiɲ"]]
     }
@@ -1588,7 +1612,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔargirʔá"]]
     }
@@ -1617,7 +1642,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)féenen"]]
     }
@@ -1632,7 +1658,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fúru"]]
     }
@@ -1672,7 +1699,8 @@
 	    	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["búosiš"]]
     }
@@ -1712,7 +1740,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) kuufúmiɲ"]]
     }
@@ -1784,7 +1813,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "baadá"],
 	    [:Singular, "bzdab"]]
@@ -1818,7 +1848,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "roδíi"],
 	    [:Singular, "rúu"]]
@@ -1885,7 +1916,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔuufumíi"],
 	    [:Singular, "ʔuufúmu"]]
@@ -2007,7 +2039,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fuofórsu"]]
     }
@@ -2022,7 +2055,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["báʔ"]]
     }
@@ -2129,7 +2163,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fuofórsiš"]]
     }
@@ -2143,7 +2178,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)géeɲ"]]
     }
@@ -2158,7 +2194,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["sué"]]
     }
@@ -2204,7 +2241,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ʔéδ(n)eɲ"]]
     }
@@ -2218,7 +2256,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "seesému"],
 	    [:Plural, "seesemíi"]]
@@ -2245,7 +2284,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)táaliɲ /(ɠíiɲ)"]]
     }
@@ -2280,7 +2320,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) fúrsiɲ"]]
     }
@@ -2316,7 +2357,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ɗók"],
 	    [:Plural, "ɗoó"]]
@@ -2371,7 +2413,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)kóɲ"]]
     }
@@ -2425,7 +2468,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔuogolmíi"],
 	    [:Singular, "ʔuogólmu"]]
@@ -2450,7 +2494,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔeδ(n)eé"],
 	    [:Singular, "ʔéδeb ~ ʔéδneb"]]
@@ -2531,7 +2576,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)fóorson"]]
     }
@@ -2545,7 +2591,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)cegesiɲ"]]
     }
@@ -2571,7 +2618,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ɗúngiɲ"]]
     }
@@ -2617,7 +2665,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔiigimíi"],
 	    [:Singular, "ʔiigímu"]]
@@ -2632,7 +2681,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)césen"]]
     }
@@ -2647,7 +2697,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɗósiš"]]
     }
@@ -2696,7 +2747,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fuofóru"]]
     }
@@ -2730,7 +2782,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ɠeɠeδé"],
 	    [:Singular, "ɠéɠet"]]
@@ -2806,7 +2859,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["saanísiš"]]
     }
@@ -2820,7 +2874,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha tíegeliɲ / he hí ɠíiɲ"]]
     }
@@ -2834,7 +2889,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "fúorsu"],
 	    [:Plural, "fuortíi"]]
@@ -2903,12 +2959,14 @@
     :note "Tosco2001b-p. 183"
     :common {:conjClass :Suffix,
 	    :derivedStem :Stative,
-	    	    	    :lexeme :edeb,
-	    	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Imperative,
-            :person :Person2}
-    :terms [[:token]  ;; schema
+             :lexeme :edeb,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative,
+             :person :Person2
+             :gender :Common
+             }
+     :terms [[:token]  ;; schema
 	    ["ha (hí) ʔéδ(n)e"]]
     }
     {:label "dhaasanac-VSuffMid2IntensSupplPosPerf-sue"
@@ -2930,8 +2988,7 @@
             [:PngB, :Fem, :Singular, :Person3, "suormosoti"]
             [:PngB, :Common, :Plural, :Person1ex, "suormosoti"]
             [:PngB, :Common, :Plural, :Person2, "suormosoti"]]
-    }}}
-
+    }
   {:label "dhaasanac-VSuffBasePosPerf-raf"
      :note "Tosco2001b-p. 140"
      :common {:conjClass :Suffix,
@@ -2980,21 +3037,22 @@
      :terms [[:token]  ;; schema
              ["yesen"]]
      }
-    {:label "dhaasanac-VPrefBasePosImprtv-as"
-    :note "Tosco2001b-p. 200"
-    :common {:conjClass :Prefix,
-	    :derivedStem :Base,
-            :derivedStemAug :Neutral,
-            :extended :Plain,
-	    	    :lexeme :as,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Imperative,
-:person :Person2}
-:terms [[:number, :token]  ;; schema
-	    [:Singular, "ʔás"],
-	    [:Plural, "yesíi"]]
-    }
+      {:label "dhaasanac-VPrefBasePosImprtv-as"
+       :note "Tosco2001b-p. 200"
+       :common {:conjClass :Prefix,
+                :derivedStem :Base,
+                :derivedStemAug :Neutral,
+                :extended :Plain,
+                :lexeme :as,
+                :polarity :Affirmative,
+                :pos :Verb,
+                :tam :Imperative,
+                :person :Person2
+                :gender :Common}
+       :terms [[:number, :token]  ;; schema
+               [:Singular, "ʔás"],
+               [:Plural, "yesíi"]]
+       }
     {:label "dhaasanac-VSuffMiddleNegImprtv-rok"
     :note "Suffix Verb Paradigm rok-"
     :common {:conjClass :Suffix,
@@ -3005,7 +3063,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)róon"]]
     }
@@ -3038,7 +3097,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)suoromiɲ"]]
     }
@@ -3053,7 +3113,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔeegéu"]]
     }
@@ -3131,7 +3192,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔúfiɲ"]]
     }
@@ -3192,7 +3254,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["saanísu"]]
     }
@@ -3206,7 +3269,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)fúoriɲ"]]
     }
@@ -3232,7 +3296,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)tíegeliɲ / ha hí ɠíiɲ"]]
     }
@@ -3259,7 +3324,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "δíc"],
 	    [:Plural, "-"]]
@@ -3274,7 +3340,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "fursiá"],
 	    [:Singular, "fúrsiš"]]
@@ -3386,7 +3453,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:derivedStem, :derivedStemAug, :extended, :lexeme, :token]  ;; schema
 	    [:S-Intens, :Intensive, :Nasal, :gewuk, "gewúmsiš"],
 	    [:Base, :Intensive, :Nasal, :gewuk, "gewwúmu"],
@@ -3488,7 +3556,7 @@
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:token]  ;; schema
-	    ["mábaadaɲ"]
+	    ["mábaadaɲ"]]
     }
     {:label "dhaasanac-VSuffBaseVNoun-badab"
     :note "Tosco2001b-p. 166"
@@ -3500,7 +3568,7 @@
 	    :tam :VerbalNoun,
 	    :pos :Verb}
     :terms [[:token]  ;; schema
-	    ["badaɲ"]
+	    ["badaɲ"]]
     }
     {:label "dhaasanac-VSuffBasePosImprtv-fuor"
     :note "Tosco2001b-p. 190;verb with two middle extended paradigms"
@@ -3512,10 +3580,11 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "fooró"],
-	    [:Singular, "fúor"]
+	    [:Singular, "fúor"]]
     }
     {:label "dhaasanac-VSuffBaseIntensRedNasPosDep-si"
     :note "Tosco2001b-p. 173;nasal-extended in Base;i ~ e in all paradigms"
@@ -3534,8 +3603,8 @@
             [:PngA, :Common, :Plural, :Person3, "seseen"],
 	    [:PngB, :Common, :Singular, :Person2, "seseen"]
             [:PngB, :Fem, :Singular, :Person3, "seseen"]
-            [:PngB, :Common, :Plural, :Person1ex, "seseen"]]
-            [:PngB, :Common, :Plural, :Person2, "seseen"]
+            [:PngB, :Common, :Plural, :Person1ex, "seseen"]
+            [:PngB, :Common, :Plural, :Person2, "seseen"]]
     }
     {:label "dhaasanac-VSuffBaseIntensNasNegImperf-saanik"
     :note "Tosco2001b-p. 153"
@@ -3578,7 +3647,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɠúolsiš"]]
     }
@@ -3594,7 +3664,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔuoggólsiš"]]
     }
@@ -3621,7 +3692,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fuufúrsiš"]]
     }
@@ -3635,7 +3707,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "géeš"],
 	    [:Plural, "geeíi"]]
@@ -3670,7 +3743,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ɠeé"],
 	    [:Plural, "-"]]
@@ -3709,7 +3783,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "buoíi"],
 	    [:Singular, "búoi"]]
@@ -3724,7 +3799,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)"]]
     }
@@ -3738,7 +3814,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "badá"],
 	    [:Singular, "bádab"]]
@@ -3820,7 +3897,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)cégen"]]
     }
@@ -3834,7 +3912,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)báadaɲ"]]
     }
@@ -3848,7 +3927,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "káɗe"],
 	    [:Plural, "(ká) yimeδíi"]]
@@ -3942,7 +4022,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fúofor"]]
     }
@@ -4037,7 +4118,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) (ká) cíimen"]]
     }
@@ -4063,7 +4145,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ciɗɗíi"],
 	    [:Singular, "círu"]]
@@ -4131,7 +4214,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "seδíi"],
 	    [:Singular, "sí"]]
@@ -4146,7 +4230,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)árgíriɲ"]]
     }
@@ -4180,7 +4265,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) fúriɲ"]]
     }
@@ -4195,7 +4281,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["gúu"]]
     }
@@ -4228,7 +4315,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ɗárramiɲ"]]
     }
@@ -4294,7 +4382,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "yiimeδíi"],
 	    [:Singular, "yíímet"]]
@@ -4309,7 +4398,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) kúfiɲ"]]
     }
@@ -4323,7 +4413,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "laá"],
 	    [:Singular, "láb"]]
@@ -4353,7 +4444,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["gúk"]]
     }
@@ -4381,7 +4473,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "yáal"],
 	    [:Plural, "(ɠeé)"]]
@@ -4397,7 +4490,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ruorúu"]]
     }
@@ -4411,7 +4505,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔasía"],
 	    [:Singular, "ʔásiš"]]
@@ -4447,7 +4542,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["baabúu"]]
     }
@@ -4462,7 +4558,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["báabaʔ"]]
     }
@@ -4477,7 +4574,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["rók"]]
     }
@@ -4523,7 +4621,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔéen"]]
     }
@@ -4551,7 +4650,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["-"]]
     }
@@ -4638,7 +4738,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ɠíeɠeɲ"]]
     }
@@ -4653,7 +4754,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["feefénu"]]
     }
@@ -4733,7 +4835,7 @@
 	    :tam :VerbalNoun,
 	    :pos :Verb}
     :terms [[:token]  ;; schema
-	    ["laalamiɲ"]
+	    ["laalamiɲ"]]
     }
     {:label "dhaasanac-VSuffBaseNegImprtv-lab"
     :note "Tosco2001b-p. 166"
@@ -4745,9 +4847,10 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
-	    ["ha (hí)láɲ"]
+	    ["ha (hí)láɲ"]]
     }
     {:label "dhaasanac-VSuffBaseIntensRedNasPosImprtv-buoi"
     :note "Tosco2001b-p. 154"
@@ -4759,10 +4862,11 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "beebemii"],
-	    [:Singular, "beebému"]
+	    [:Singular, "beebému"]]
     }
     {:label "dhaasanac-VSuffBaseNasPosImperf-raf"
     :note "Tosco2001b-p. 140"
@@ -4807,7 +4911,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔíddik"],
 	    [:Plural, "ʔijjaá"]]
@@ -4822,7 +4927,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "feeníi"],
 	    [:Singular, "féenu"]]
@@ -4837,7 +4943,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔidiɲ"]]
     }
@@ -4865,7 +4972,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ɠee- {stand"]]
     }
@@ -4938,7 +5046,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["baabásiš"]]
     }
@@ -4950,7 +5059,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔidiɲ"]]
     }
@@ -5032,7 +5142,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔéf"],
 	    [:Plural, "-"]]
@@ -5067,7 +5178,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)cegésiɲ"]]
     }
@@ -5094,7 +5206,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ɠooló ~ ʔooló"],
 	    [:Singular, "ɠúol"]]
@@ -5136,7 +5249,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fuufúru"]]
     }
@@ -5216,7 +5330,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "kúf"],
 	    [:Plural, "kufá"]]
@@ -5399,7 +5514,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)fóoron"]]
     }
@@ -5665,7 +5781,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "kóm"],
 	    [:Plural, "koó"]]
@@ -5729,7 +5846,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)súoɲ"]]
     }
@@ -5741,7 +5859,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔídiš"],
 	    [:Plural, "ʔidía"]]
@@ -5768,7 +5887,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔágat"],
 	    [:Plural, "yegeδi"]]
@@ -5804,7 +5924,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔegéδ(n)eš"]]
     }
@@ -5985,7 +6106,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ɗéernen"]]
     }
@@ -5999,7 +6121,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "furá"],
 	    [:Singular, "fúr"]]
@@ -6014,7 +6137,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "giedíi"],
 	    [:Singular, "giédiš"]]
@@ -6027,7 +6151,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔeδ(n)eíi"],
 	    [:Singular, "-"],
@@ -6098,7 +6223,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["véersiš"]]
     }
@@ -6141,7 +6267,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔéeb"]]
     }
@@ -6155,7 +6282,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)césiɲ"]]
     }
@@ -6189,7 +6317,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["gúɲ"]]
     }
@@ -6244,7 +6373,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔiggísiš"]]
     }
@@ -6313,7 +6443,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔegéδ(n)eb"]]
     }
@@ -6401,7 +6532,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "laalamíi"],
 	    [:Singular, "laalámu"]]
@@ -6604,7 +6736,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ɗúngiɲ"]]
     }
@@ -6642,7 +6775,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔiigímiɲ"]]
     }
@@ -6702,7 +6836,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ɠeeɠeδé"],
 	    [:Singular, "ɠíeɠet"]]
@@ -6717,7 +6852,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔárgir"]]
     }
@@ -6857,7 +6993,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)saanímiɲ"]]
     }
@@ -6905,7 +7042,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)véeriɲ"]]
     }
@@ -6919,7 +7057,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ɗúnguk"],
 	    [:Plural, "ɗungá"]]
@@ -6934,7 +7073,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)báan"]]
     }
@@ -6968,7 +7108,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "-"],
 	    [:Singular, "ɗáb"]]
@@ -7071,7 +7212,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "suorrómu"],
 	    [:Plural, "suorromíi"]]
@@ -7250,7 +7392,8 @@
 	    	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["kúfsiš"]]
     }
@@ -7351,7 +7494,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔásu"],
 	    [:Plural, "yetíi"]]
@@ -7381,7 +7525,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔagásu"]]
     }
@@ -7504,7 +7649,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["saanmísu"]]
     }
@@ -7544,7 +7690,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "kuufumíi"],
 	    [:Singular, "kuufúmu"]]
@@ -7579,7 +7726,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ʔéeu"],
 	    [:Plural, "ʔeeδíi"]]
@@ -7615,7 +7763,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fúorsiš"]]
     }
@@ -7677,7 +7826,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)sesémiɲ"]]
     }
@@ -7691,7 +7841,8 @@
 	    	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɠeɠésiš"]]
     }
@@ -7705,7 +7856,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔeebísan"]]
     }
@@ -7720,7 +7872,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["béeb"]]
     }
@@ -7794,7 +7947,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "gúš"],
 	    [:Plural, "guá"]]
@@ -7862,7 +8016,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɗuungúsiš"]]
     }
@@ -7877,7 +8032,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɗungʔusiš"]]
     }
@@ -7891,7 +8047,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)sáaniɲ"]]
     }
@@ -7905,7 +8062,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ɗóɲ"]]
     }
@@ -7920,7 +8078,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["baasiš"]]
     }
@@ -7968,7 +8127,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ciicíru"]]
     }
@@ -7996,7 +8156,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "yeδíi"],
 	    [:Singular, "ʔát"]]
@@ -8031,7 +8192,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)síen"]]
     }
@@ -8066,7 +8228,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɗeeɗernéu"]]
     }
@@ -8109,8 +8272,7 @@
             [:PngB, :Common, :Plural, :Person2, "ʔéδ(n)ecu"]]
     }
     {:label "dhaasanac-VSuffBaseIntensRedNasVNoun-guol"
-    :note "Tosco2001b-p. 173;ɠ ~ ʔ alternation base imprtv pl and all forms of intens (base
-            and caus)"
+    :note "Tosco2001b-p. 173;ɠ ~ ʔ alternation base imprtv pl and all forms of intens (base and caus)"
     :common {:conjClass :Suffix,
 	    :derivedStem :Base,
 	    :derivedStemAug :Intensive,
@@ -8186,12 +8348,12 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["fúufur"]]
     }
     {:label "dhaasanac-VSuffBaseNegImperf-fur"
-    :note ""
     :common {:conjClass :Suffix,
 	    :derivedStem :Base,
             :derivedStemAug :Neutral,
@@ -8328,7 +8490,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (híbádaɲ)"]]
     }
@@ -8381,7 +8544,8 @@
 	    	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔufúsiš"]]
     }
@@ -8455,7 +8619,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)círan"]]
     }
@@ -8469,7 +8634,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "yeegélmu"],
 	    [:Plural, "giegelmíi"]]
@@ -8484,7 +8650,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)ʔíɲ"]]
     }
@@ -8567,7 +8734,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ʔagásiš"]]
     }
@@ -8581,7 +8749,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "ɗeernéu [check"],
 	    [:Plural, "ɗeerneδíi"]]
@@ -8595,7 +8764,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "béesu"],
 	    [:Plural, "beetíi"]]
@@ -8621,7 +8791,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)béeseɲ"]]
     }
@@ -8717,7 +8888,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɗósu"]]
     }
@@ -8731,7 +8903,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)béebemiɲ"]]
     }
@@ -8745,7 +8918,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ɗungumíi"],
 	    [:Singular, "ɗungúmu"]]
@@ -8760,7 +8934,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "véer"],
 	    [:Plural, "veeré"]]
@@ -8851,7 +9026,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "ʔargá"],
 	    [:Singular, "ʔárig"]]
@@ -8866,7 +9042,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Plural, "fuoɗɗíi"],
 	    [:Singular, "fúoru"]]
@@ -8881,7 +9058,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí) ɠéɠeɲ"]]
     }
@@ -8895,7 +9073,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "suormósu"],
 	    [:Plural, "suormitíi"]]
@@ -8930,7 +9109,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)sormósoɲ"]]
     }
@@ -8998,7 +9178,8 @@
 	    	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ɠieɠésiš"]]
     }
@@ -9012,7 +9193,8 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative,
-:person :Person2}
+:person :Person2
+            :gender :Common}
 :terms [[:number, :token]  ;; schema
 	    [:Singular, "búu"],
 	    [:Plural, "baδíi"]]
@@ -9059,7 +9241,8 @@
 	    	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative,
-            :person :Person2}
+            :person :Person2
+            :gender :Common}
     :terms [[:token]  ;; schema
 	    ["ha (hí)cén"]]
     }}
@@ -9379,4 +9562,5 @@
             [:PngB, :Fem, :Singular, :Person3, :Affirmative, :Dependent, "-an", :Finite]
             [:PngB, :Common, :Plural, :Person1ex, :Affirmative, :Dependent, "-an", :Finite]
             [:PngB, :Common, :Plural, :Person2, :Affirmative, :Dependent, "-an", :Finite]]
-}}}
+     }}
+}
