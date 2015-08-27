@@ -3,25 +3,23 @@
 :sgpref "dha"
 :schemata {
 :case [:Absolutive, :Object, :Possessive, :Subject, :Verbal]
-	  :cohesion [:Common, :Exclusive, :Inclusive, :U]
 	  :conjClass [:Prefix, :Suffix]
-	  :derivedStem [:Base, :Inchoative, :S, :S-Intens, :S2, :Stative, :T, :T2]
+	  :derivedStem [:Base, :Inchoative, :S, :S_Intens, :S2, :Stative, :T, :T2]
 	  :derivedStemAug [:Intensive :Neutral]
-	  :emphatic [:Emphatic :U]
+	  :emphasis [:Emphatic, :Non_Emphatic]
 	  :extended [:DExtClass, :Intensive, :Long, :Nasal, :Reduced, :ReducedNasal, :Suppletive :Plain]
 	  :formType [:Stem, :Suffix]
 	  :gender [:Common, :Fem, :Masc]
 	  :morphClass [:CAUSINTENS, :COMPDASSOM, :VSUFFDERVPATTERNS, :VSUPPLETIVEPL]
 	  :number [:Plural, :Singular]
 	  :pdgmSubType [:DervPatterns]
-	  :pdgmType [:Comparative, :Exemplary]
+	  :pdgmType [:Comparative, :Partial]
 	  :person [:Invar, :Person1, :Person1ex, :Person1in, :Person2, :Person3]
 	  :pngShapeClass [:PngA, :PngB]
 	  :polarity [:Affirmative, :Negative]
 	  :pos [:Pronoun, :Verb]
 	  :proClass [:Independent]
-           :status [:NA]
-	  :tam [:Dependent, :Imperative, :Imperfect, :Past, :Perfect, :ShortPast, :VerbalNoun, :U]
+	  :tam [:Dependent, :Imperative, :Imperfect, :Past, :Perfect, :ShortPast, :VerbalNoun, :General]
 	  :verbMorphClass [:DervStemMarker, :NonCrnlDrop, :StemFormation]
 	  :verbType [:Finite, :VerbalNoun]
            }
@@ -3456,14 +3454,14 @@
             :person :Person2
             :gender :Common}
     :terms [[:derivedStem, :derivedStemAug, :extended, :lexeme, :token]  ;; schema
-	    [:S-Intens, :Intensive, :Nasal, :gewuk, "gewúmsiš"],
+	    [:S_Intens, :Intensive, :Nasal, :gewuk, "gewúmsiš"],
 	    [:Base, :Intensive, :Nasal, :gewuk, "gewwúmu"],
 	    [:Base, :Common, :Common, :gewuk, "géwuk"],
-	    [:S-Intens, :Common, :Common, :feffik, "feʄʄísiš"],
-	    [:S-Intens, :Intensive, :Nasal, :feffik, "feʄʄʔimísiš"],
+	    [:S_Intens, :Common, :Common, :feffik, "feʄʄísiš"],
+	    [:S_Intens, :Intensive, :Nasal, :feffik, "feʄʄʔimísiš"],
 	    [:Base, :Common, :Common, :feffik, "féʄʄik"],
 	    [:Base, :Intensive, :Nasal, :feffik, "feʄʄímu"],
-	    [:S-Intens, :Common, :Common, :gewuk, "géwsiš"]]
+	    [:S_Intens, :Common, :Common, :gewuk, "géwsiš"]]
     }
     {:label "dhaasanac-VPrefBasePosPerf-im"
     :note "Tosco2001b-p. 201"
@@ -7933,7 +7931,7 @@
 	    :person :Invar,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :U}
+	    :tam :General}
     :terms [[:token]  ;; schema
 	    ["kufmúsiš"]]
     }
@@ -8946,7 +8944,7 @@
     :common {:conjClass :Suffix,
 	    :morphClass :VSUFFDERVPATTERNS,
 	    :pdgmSubType :DervPatterns,
-	    :pdgmType :Exemplary,
+	    :pdgmType :Partial,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :formType :Stem}
@@ -9427,52 +9425,52 @@
             [:PngB, :Common, :Plural, :Person2, :Affirmative, :Imperfect, "-CGa"]]
     }
     {:label "dhaasanac-PInd"
-    :note "Tosco2001b-p. 211"
+    :note "Tosco2001b-p. 211; cf. 5.2 & 5.2.2.1 (pp. 212-214) on gáal "
     :common {:morpheme :PRO,
 	    :pos :Pronoun,
 	    :proClass :Independent}
-    :terms [[:case, :cohesion, :emphatic, :number, :person, :token]  ;; schema
-	    [:Subject, :U, :U, :Singular, :Person2, "kúo"],
-	    [:Verbal, :Exclusive, :U, :Plural, :Person1, "-"],
-	    [:Object, :Exclusive, :U, :Plural, :Person1, "-"],
-	    [:Absolutive, :U, :U, :Singular, :Person2, "kúuni"],
-	    [:Verbal, :U, :U, :Singular, :Person3, "hí"],
-	    [:Possessive, :U, :U, :Singular, :Person3, "-"],
-	    [:Subject, :U, :Emphatic, :Singular, :Person1, "yáa=lle"],
-	    [:Subject, :Inclusive, :U, :Plural, :Person1, "(hé) ké ~ kí"],
-	    [:Absolutive, :U, :Emphatic, :Singular, :Person1, "yúʔíin"],
-	    [:Subject, :U, :Emphatic, :Plural, :Person2, "ʔít=lle"],
-	    [:Absolutive, :Inclusive, :U, :Plural, :Person1, "múuni"],
-	    [:Possessive, :Inclusive, :U, :Plural, :Person1, "kúnnu"],
-	    [:Subject, :Exclusive, :Emphatic, :Plural, :Person1, "ɲí=lle"],
-	    [:Verbal, :Inclusive, :U, :Plural, :Person1, "(hé) ké ~ kí"],
-	    [:Subject, :U, :Emphatic, :Singular, :Person3, "-"],
-	    [:Subject, :U, :Emphatic, :Singular, :Person2, "kúo=lle"],
-	    [:Possessive, :U, :U, :Singular, :Person2, "kú / ku"],
-	    [:Absolutive, :Exclusive, :U, :Plural, :Person1, "ɲíini"],
-	    [:Subject, :U, :U, :Singular, :Person1, "yáa"],
-	    [:Object, :U, :U, :Singular, :Person1, "ye"],
-	    [:Subject, :Inclusive, :Emphatic, :Plural, :Person1, "múun=lle"],
-	    [:Subject, :U, :U, :Plural, :Person2, "ʔití"],
-	    [:Possessive, :U, :U, :Singular, :Person1, "cú / cu"],
-	    [:Subject, :Exclusive, :U, :Plural, :Person1, "ɲaaɲi"],
-	    [:Absolutive, :U, :Emphatic, :Singular, :Person2, "kúunʔíin"],
-	    [:Verbal, :U, :U, :Singular, :Person2, "-"],
-	    [:Object, :U, :U, :Plural, :Person2, "ʔitíni"],
-	    [:Possessive, :Exclusive, :U, :Plural, :Person1, "kíɲɲu"],
-	    [:Verbal, :U, :U, :Singular, :Person1, "-"],
-	    [:Verbal, :U, :U, :Plural, :Person2, "hí"],
-	    [:Possessive, :U, :U, :Plural, :Person2, "kíccu"],
-	    [:Absolutive, :U, :Emphatic, :Singular, :Person3, "míʔíin"],
-	    [:Absolutive, :U, :U, :Singular, :Person1, "yú"],
-	    [:Object, :U, :U, :Singular, :Person2, "ko"],
-	    [:Object, :Inclusive, :U, :Plural, :Person1, "-"],
-	    [:Absolutive, :U, :U, :Singular, :Person3, "-"],
-	    [:Absolutive, :U, :Emphatic, :Plural, :Person3, "gáalʔíin"],
-	    [:Object, :U, :U, :Singular, :Person3, "-"],
-	    [:Subject, :U, :U, :Singular, :Person3, "hé"],
-	    [:Absolutive, :U, :Emphatic, :Plural, :Person3, "ʔíin=allé"],
-	    [:Absolutive, :U, :U, :Plural, :Person2, "ʔitíni"]]
+    :terms [[:case, :emphasis, :number, :person, :token]  ;; schema
+	    [:Subject, :Non_Emphatic, :Singular, :Person2, "kúo"],
+	    [:Verbal, :Non_Emphatic, :Plural, :Person1ex, "-"],
+	    [:Object, :Non_Emphatic, :Plural, :Person1ex, "-"],
+	    [:Absolutive, :Non_Emphatic, :Singular, :Person2, "kúuni"],
+	    [:Verbal, :Non_Emphatic, :Singular, :Person3, "hí"],
+	    [:Possessive, :Non_Emphatic, :Singular, :Person3, "-"],
+	    [:Subject, :Emphatic, :Singular, :Person1, "yáa=lle"],
+	    [:Subject, :Non_Emphatic, :Plural, :Person1in, "(hé) ké ~ kí"],
+	    [:Absolutive, :Emphatic, :Singular, :Person1, "yúʔíin"],
+	    [:Subject, :Emphatic, :Plural, :Person2, "ʔít=lle"],
+	    [:Absolutive, :Non_Emphatic, :Plural, :Person1in, "múuni"],
+	    [:Possessive, :Non_Emphatic, :Plural, :Person1in, "kúnnu"],
+	    [:Subject, :Emphatic, :Plural, :Person1ex, "ɲí=lle"],
+	    [:Verbal, :Non_Emphatic, :Plural, :Person1in, "(hé) ké ~ kí"],
+	    [:Subject, :Emphatic, :Singular, :Person3, "-"],
+	    [:Subject, :Emphatic, :Singular, :Person2, "kúo=lle"],
+	    [:Possessive, :Non_Emphatic, :Singular, :Person2, "kú / ku"],
+	    [:Absolutive, :Non_Emphatic, :Plural, :Person1ex, "ɲíini"],
+	    [:Subject, :Non_Emphatic, :Singular, :Person1, "yáa"],
+	    [:Object, :Non_Emphatic, :Singular, :Person1, "ye"],
+	    [:Subject, :Emphatic, :Plural, :Person1in, "múun=lle"],
+	    [:Subject, :Non_Emphatic, :Plural, :Person2, "ʔití"],
+	    [:Possessive, :Non_Emphatic, :Singular, :Person1, "cú / cu"],
+	    [:Subject, :Non_Emphatic, :Plural, :Person1ex, "ɲaaɲi"],
+	    [:Absolutive, :Emphatic, :Singular, :Person2, "kúunʔíin"],
+	    [:Verbal, :Non_Emphatic, :Singular, :Person2, "-"],
+	    [:Object, :Non_Emphatic, :Plural, :Person2, "ʔitíni"],
+	    [:Possessive, :Non_Emphatic, :Plural, :Person1ex, "kíɲɲu"],
+	    [:Verbal, :Non_Emphatic, :Singular, :Person1, "-"],
+	    [:Verbal, :Non_Emphatic, :Plural, :Person2, "hí"],
+	    [:Possessive, :Non_Emphatic, :Plural, :Person2, "kíccu"],
+	    [:Absolutive, :Emphatic, :Singular, :Person3, "míʔíin"],
+	    [:Absolutive, :Non_Emphatic, :Singular, :Person1, "yú"],
+	    [:Object, :Non_Emphatic, :Singular, :Person2, "ko"],
+	    [:Object, :Non_Emphatic, :Plural, :Person1in, "-"],
+	    [:Absolutive, :Non_Emphatic, :Singular, :Person3, "-"],
+	    [:Absolutive, :Emphatic, :Plural, :Person3, "gáalʔíin"],
+	    [:Object, :Non_Emphatic, :Singular, :Person3, "-"],
+	    [:Subject, :Non_Emphatic, :Singular, :Person3, "hé"],
+	    [:Absolutive, :Emphatic, :Plural, :Person3, "ʔíin=allé"],
+	    [:Absolutive, :Non_Emphatic, :Plural, :Person2, "ʔitíni"]]
     }
     {:label "dhaasanac-VSuffCausStemFormation"
     :note "Tosco2001b-p. 198;factitive denominal verbs;cf. ʔeδ(n)e ‘white’"
@@ -9487,7 +9485,7 @@
             [:PngA, :Masc, :Singular, :Person3, :Affirmative, :Perfect, "-i-i"]
             [:PngA, :Common, :Plural, :Person1in, :Affirmative, :Perfect, "-i-i"]
             [:PngA, :Common, :Plural, :Person3, :Affirmative, :Perfect, "-i-i"],
-	    [:U, :U, :VerbalNoun, "ɲ"],
+	    [:_NA, :_NA :VerbalNoun, "ɲ"],
 	    [:Common, :Negative, :Imperative, "ɲ"],
 	    [:Common, :Negative, :Perfect, "ɲ"],
 	    [:PngB, :Common, :Singular, :Person2, :Affirmative, :Perfect, "c-i"]
