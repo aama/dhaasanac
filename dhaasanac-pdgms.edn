@@ -5,26 +5,20 @@
 :datasource "Tosco2001b"
 :geodemoURL "http://www.ethnologue.com/language/dsh"
 :geodemoTXT "The Western Omo-Tana language, Dhaasanac is spoken in Ethiopia and Kenya in villages along the lower Omo river and near Lake Turkana."
-:schemata{:gender [:Common :Fem :Masc],
-          :verbType [:Finite :VerbalNoun],
-          :pdgmSubType [:DervPatterns],
-          :pdgmType [:VSUFFDERVPATTERNS :Finite :NA :CAUSINTENS]
-          :polarity [:Affirmative :Negative],
-          :case [:Absolutive :Object :Possessive :Subject :Verbal],
-          :conjClass [:Prefix :Suffix],
-          :shapeClass [:A :B],
-          :pos [:Pronoun :Verb],
-          :person [:Invar :Person1 :Person1ex :Person1in :Person2 :Person3],
-          :derivedStem [:Base :Inchoative :S :S_Intens :S2 :Stative :T :T2],
-          :morphClass [:CAUSINTENS :COMPDASSOM :VSUFFDERVPATTERNS :VSUPPLETIVEPL],
-          :extended [:DExtClass :Intensive :Long :Nasal :Reduced :ReducedNasal :Suppletive :Plain],
-          :formType [:Stem :Suffix],
-          :proClass [:Independent],
-          :derivedStemAug [:Intensive :Neutral],
-          :tam [:Dependent :Imperative :Imperfect :Past :Perfect :ShortPast :VerbalNoun :General],
-          :number [:Plural :Singular],
-          :verbMorphClass [:DervStemMarker :NonCrnlDrop :StemFormation],
-          :emphasis [:Emphatic :Non_Emphatic]}
+ :schemata {:conjClass [:Prefix  :Stative :Suffix],
+            :derivedCategory [:Ablative :Benefactive :Frequentative :Instrumental :Intransitive :Reflexive :Ventive],
+            :gender [:Common :Fem :Masc],
+            :number [:Invariable :Plural :Singular :_NA],
+            :patternClass [:Final-i-e :_NA],
+            :person [:Invariable :Person1 :Person2 :Person3 :_NA],
+            :polarity [:Affirmative :Invariable :Negative :_NA],
+            :pos [:Pronoun :Verb],
+            :position [:PersAsp :PrefV :SuffV],
+            :proClass [:Independent :ObjAff :Possessive],
+            :synEnv [:A :B],
+            :tam [:Imperative :Imperfect :Inceptive :Invariable :Perfect :Subjunctive :_NA],
+            :verbMorphClass [:DervStem :PersAffix :SubjMarker]
+            :pdgmType [:Finite :PersAffix :DERVSGTEMS :PRO :SUBJMARKERADDIMPRTV :SUBJMARKERAFFIMPERF :SUBJMARKERAFFPERF :SUBJMARKERAFFSUBJUNCTIVE :SUBJMARKERNEGIMPERF :SUBJMARKERNEGIMPRTV :SUBJMARKERNEGPERF :SUBJMARKERVSUFF]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam],
           :inflClass [:conjClass],
@@ -41,7 +35,6 @@
            :al {:gloss "[x]", :lemma "[y]"},
            :ongornob {:gloss "[x]", :lemma "[y]"},
            :dok {:gloss "[x]", :lemma "[y]"},
-           :CAUSINTENS {:gloss "[x]", :lemma "[y]"},
            :raf {:gloss "[x]", :lemma "[y]"},
            :gush {:gloss "[x]", :lemma "[y]"},
            :sue {:gloss "[x]", :lemma "[y]"},
@@ -53,9 +46,7 @@
            :gee {:gloss "[x]", :lemma "[y]"},
            :saanik {:gloss "[x]", :lemma "[y]"},
            :iddik {:gloss "[x]", :lemma "[y]"},
-           :VSUFFDERVPATTERNS {:gloss "[x]", :lemma "[y]"},
            :lab {:gloss "[x]", :lemma "[y]"},
-           :COMPDASSOM {:gloss "[x]", :lemma "[y]"},
            :kom {:gloss "[x]", :lemma "[y]"},
            :arig {:gloss "[x]", :lemma "[y]"},
            :badab {:gloss "[x]", :lemma "[y]"},
@@ -70,7 +61,6 @@
            :buoi {:gloss "[x]", :lemma "[y]"},
            :fur {:gloss "[x]", :lemma "[y]"},
            :veer {:gloss "[x]", :lemma "[y]"},
-           :VSUPPLETIVEPL {:gloss "[x]", :lemma "[y]"},
            :geget {:gloss "[x]", :lemma "[y]"},
            :bolob {:gloss "[x]", :lemma "[y]"},
            :dab {:gloss "[x]", :lemma "[y]"},
@@ -2807,9 +2797,10 @@
              :derivedStem :Base,
              :extended :Plain,
              :derivedStemAug :Neutral,
+             :person :Person2,
              :tam :Imperative,
              :verbMorphClass :NonCrnlDrop}
-    :terms [[:token-note :gender :number :person :token],
+    :terms [[:number :token],
             [:Singular "ráf"],
             [:Plural "rafá"]]
     }
@@ -6493,7 +6484,6 @@
             –m-siš"
     :pdgmType :CAUSINTENS
     :common {:conjClass :Suffix,
-             :morphClass :CAUSINTENS,
              :number :Singular,
              :polarity :Affirmative,
              :pos :Verb,
@@ -8612,7 +8602,6 @@
             fur-,baʔ-,saanik-"
     :pdgmType :VSUFFDERVPATTERNS
     :common {:conjClass :Suffix,
-             :morphClass :VSUFFDERVPATTERNS,
              :pdgmSubType :DervPatterns,
              :polarity :Affirmative,
              :pos :Verb,
@@ -9808,9 +9797,8 @@
 :muterms [
     {:label "dhaasanac-VSuffMiddle"
     :note "Tosco2001b-p. 187"
-    :pdgmType :Finite
+    :pdgmType :VSUFFMIDDLE
     :common {:conjClass :Suffix,
-             :morpheme :VSUFFMIDDLE,
              :pos :Verb}
     :terms [[:derivedStem :token-note :polarity :tam :token],
             [:T2 "ShapeClass: A" :Affirmative :Perfect "-t-i"],
@@ -9844,13 +9832,11 @@
     }
     {:label "dhaasanac-VSuffCaus2StemFormation"
     :note "Tosco2001b-p. 195"
-    :pdgmType :Finite
+    :pdgmType :CAUS2STEM
     :common {:conjClass :Suffix,
              :derivedStem :S2,
-             :morpheme :CAUS2STEM,
              :pos :Verb,
-             :formType :Suffix,
-             :verbMorphClass :StemFormation}
+             :formType :Suffix}
     :terms [[:token-note :gender :number :person :polarity :tam :token],
             [:_NA :_NA :Singular :Person2 :Affirmative :Imperative "-´s-i-š"],
             ["ShapeClass: A" :Common :Singular :Person1 :Affirmative :Imperfect "-s-i-a"],
@@ -9893,9 +9879,8 @@
     }
     {:label "dhaasanac-PInd"
     :note "Tosco2001b-p. 211; cf. 5.2 & 5.2.2.1 (pp. 212-214) on gáal "
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Independent}
     :terms [[:case :emphasis :number :person :token],
             [:Subject :Non_Emphatic :Singular :Person2 "kúo"],
@@ -9942,13 +9927,11 @@
     }
     {:label "dhaasanac-VSuffBaseStem"
     :note "Tosco2001b-p. 113;CG = Consonant Gradation;"
-    :pdgmType :Finite
+    :pdgmType :FiniteStemFormation
     :common {:conjClass :Suffix,
              :derivedStem :Base,
-             :morpheme :VBASESTEMSUFF,
              :pos :Verb,
-             :formType :Suffix,
-             :verbMorphClass :StemFormation}
+             :formType :Suffix}
     :terms [[:token-note :gender :number :person :polarity :tam :token],
             ["ShapeClass: B" :Common :Singular :Person2 :Affirmative :Dependent "-CGu"],
             ["ShapeClass: B" :Fem :Singular :Person3 :Affirmative :Dependent "-CGu"],
@@ -9991,13 +9974,11 @@
     }
     {:label "dhaasanac-VSuffStatStemFormation"
     :note "Tosco2001b-p. 181"
-    :pdgmType :Finite
+    :pdgmType :FiniteStemFormation
     :common {:conjClass :Suffix,
              :derivedStem :Stative,
-             :morpheme :STATSTEM,
              :pos :Verb,
-             :formType :Suffix,
-             :verbMorphClass :StemFormation}
+             :formType :Suffix}
     :terms [[:token-note :gender :number :person :polarity :tam :token],
             ["ShapeClass: B" :Common :Singular :Person2 :Affirmative :Imperfect "-yya"],
             ["ShapeClass: B" :Fem :Singular :Person3 :Affirmative :Imperfect "-yya"],
@@ -10040,11 +10021,10 @@
     }
     {:label "dhaasanac-VSuffBaseNasNasExt"
     :note "Tosco2001b-p. 148"
-    :pdgmType :Finite
+    :pdgmType :VBASENASALEXT
     :common {:conjClass :Suffix,
              :derivedStem :Base,
              :extended :Nasal,
-             :morpheme :VBASENASALEXT,
              :pos :Verb,
              :formType :Suffix,
              :verbMorphClass :DervStemMarker}
@@ -10090,10 +10070,9 @@
     }
     {:label "dhaasanac-VSuffCausStemFormation"
     :note "Tosco2001b-p. 198;factitive denominal verbs;cf. ʔeδ(n)e ‘white’"
-    :pdgmType :Finite
+    :pdgmType :VCAUSSTEM
     :common {:conjClass :Suffix,
              :derivedStem :S,
-             :morpheme :VCAUSSTEM,
              :pos :Verb,
              :formType :Suffix,
              :verbMorphClass :StemFormation}
@@ -10133,4 +10112,3 @@
 }
  
  
-:pdgmType [ #{#<Atom@15aab8c6: #{:VSUFFDERVPATTERNS :Finite :NA :CAUSINTENS}>} ]
