@@ -5,20 +5,25 @@
 :datasource "Tosco2001b"
 :geodemoURL "http://www.ethnologue.com/language/dsh"
 :geodemoTXT "The Western Omo-Tana language, Dhaasanac is spoken in Ethiopia and Kenya in villages along the lower Omo river and near Lake Turkana."
- :schemata {:conjClass [:Prefix  :Stative :Suffix],
-            :derivedCategory [:Ablative :Benefactive :Frequentative :Instrumental :Intransitive :Reflexive :Ventive],
-            :gender [:Common :Fem :Masc],
-            :number [:Invariable :Plural :Singular :_NA],
-            :patternClass [:Final-i-e :_NA],
-            :person [:Invariable :Person1 :Person2 :Person3 :_NA],
-            :polarity [:Affirmative :Invariable :Negative :_NA],
+ :schemata {:vmorphClass [:CAUS2STEM  :CAUSINTENS :VBASENASALEXT :VCAUSSTEM :VSUFFDERVPATTERNS :VSUFFMIDDLE :FiniteStemFormationBase :FiniteStemFormationStative],
+            :case [:Absolutive :Object :Possessive :Subject :Verbal],
+            :conjClass [:Prefix :Suffix],
+            :derivedStem [:Base :Inchoative :S :S2 :S_Intens :Stative :T :T2],
+            :derivedStemAug [:Common :Intensive :Neutral],
+            :emphasis [:Emphatic :Non_Emphatic],
+            :extended [:Common :DExtClass :Long :Nasal :Plain :Reduced :ReducedNasal :Suppletive],
+            :formType [:Stem :Suffix],
+            :gender [:Common :Fem :Masc :_NA],
+            :number [:Common :Plural :Singular :_NA],
+            :pdgmSubType [:DervPatterns],
+            :person [:Common :Invar :Person1 :Person1ex :Person1in :Person2 :Person3 :_NA],
+            :polarity [:Affirmative :Common :Negative :_NA],
             :pos [:Pronoun :Verb],
-            :position [:PersAsp :PrefV :SuffV],
-            :proClass [:Independent :ObjAff :Possessive],
-            :synEnv [:A :B],
-            :tam [:Imperative :Imperfect :Inceptive :Invariable :Perfect :Subjunctive :_NA],
-            :verbMorphClass [:DervStem :PersAffix :SubjMarker]
-            :pdgmType [:Finite :PersAffix :DERVSGTEMS :PRO :SUBJMARKERADDIMPRTV :SUBJMARKERAFFIMPERF :SUBJMARKERAFFPERF :SUBJMARKERAFFSUBJUNCTIVE :SUBJMARKERNEGIMPERF :SUBJMARKERNEGIMPRTV :SUBJMARKERNEGPERF :SUBJMARKERVSUFF]}
+            :proClass [:Independent],
+            :tam [:Dependent :General :Imperative :Imperfect :Perfect :ShortPast :VerbalNoun :_NA],
+            :verbMorphClass [:DervStemMarker :NonCrnlDrop :StemFormation],
+            :verbType [:Finite :VerbalNoun]
+            :pdgmType [:Finite :PRO :VOther]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam],
           :inflClass [:conjClass],
@@ -6482,8 +6487,9 @@
     {:label "dhaasanac-VSuffCausIntens"
     :note "Tosco2001b-p. 197 f;some verbs with nas-ext intens form intens caus with
             –m-siš"
-    :pdgmType :CAUSINTENS
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :CAUSINTENS
+             :conjClass :Suffix,
              :number :Singular,
              :polarity :Affirmative,
              :pos :Verb,
@@ -8600,8 +8606,9 @@
     {:label "dhaasanac-VSuffDervPatterns"
     :note "Tosco2001b-p. 202-204;these three verbs plus same categories from
             fur-,baʔ-,saanik-"
-    :pdgmType :VSUFFDERVPATTERNS
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :VSUFFDERVPATTERNS
+             :conjClass :Suffix,
              :pdgmSubType :DervPatterns,
              :polarity :Affirmative,
              :pos :Verb,
@@ -9797,8 +9804,9 @@
 :muterms [
     {:label "dhaasanac-VSuffMiddle"
     :note "Tosco2001b-p. 187"
-    :pdgmType :VSUFFMIDDLE
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :VSUFFMIDDLE
+             :conjClass :Suffix,
              :pos :Verb}
     :terms [[:derivedStem :token-note :polarity :tam :token],
             [:T2 "ShapeClass: A" :Affirmative :Perfect "-t-i"],
@@ -9832,8 +9840,9 @@
     }
     {:label "dhaasanac-VSuffCaus2StemFormation"
     :note "Tosco2001b-p. 195"
-    :pdgmType :CAUS2STEM
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :CAUS2STEM
+             :conjClass :Suffix,
              :derivedStem :S2,
              :pos :Verb,
              :formType :Suffix}
@@ -9927,8 +9936,9 @@
     }
     {:label "dhaasanac-VSuffBaseStem"
     :note "Tosco2001b-p. 113;CG = Consonant Gradation;"
-    :pdgmType :FiniteStemFormation
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :FiniteStemFormationBase
+             :conjClass :Suffix,
              :derivedStem :Base,
              :pos :Verb,
              :formType :Suffix}
@@ -9974,8 +9984,9 @@
     }
     {:label "dhaasanac-VSuffStatStemFormation"
     :note "Tosco2001b-p. 181"
-    :pdgmType :FiniteStemFormation
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :FiniteStemFormationStative
+             :conjClass :Suffix,
              :derivedStem :Stative,
              :pos :Verb,
              :formType :Suffix}
@@ -10021,8 +10032,9 @@
     }
     {:label "dhaasanac-VSuffBaseNasNasExt"
     :note "Tosco2001b-p. 148"
-    :pdgmType :VBASENASALEXT
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :VBASENASALEXT
+             :conjClass :Suffix,
              :derivedStem :Base,
              :extended :Nasal,
              :pos :Verb,
@@ -10070,8 +10082,9 @@
     }
     {:label "dhaasanac-VSuffCausStemFormation"
     :note "Tosco2001b-p. 198;factitive denominal verbs;cf. ʔeδ(n)e ‘white’"
-    :pdgmType :VCAUSSTEM
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :VCAUSSTEM
+             :conjClass :Suffix,
              :derivedStem :S,
              :pos :Verb,
              :formType :Suffix,
