@@ -5,25 +5,26 @@
  :datasource "Tosco2001b"
  :geodemoURL "http://www.ethnologue.com/language/dsh"
  :geodemoTXT "The Western Omo-Tana language, Dhaasanac is spoken in Ethiopia and Kenya in villages along the lower Omo river and near Lake Turkana."
-:schemata {:case [:Absolutive :Object :Possessive :Subject :Verbal],
-           :conjClass [:Prefix :Suffix],
-           :derivedStem [:Base :Inchoative :S :S2 :S_Intens :Stative :T :T2],
-           :derivedStemAug [:Common :Intensive :Neutral],
-           :emphasis [:Emphatic :Non_Emphatic],
-           :extended [:Common :DExtClass :Long :Nasal :Plain :Reduced :ReducedNasal :Suppletive],
-           :formType [:Stem :Suffix],
-           :gender [:Common :Fem :Masc :_NA],
-           :number [:Common :Plural :Singular :_NA],
-           :pdgmSubType [:DervPatterns],
-           :person [:Common :Invar :Person1 :Person1ex :Person1in :Person2 :Person3 :_NA],
-           :polarity [:Affirmative :Common :Negative :_NA],
-           :pos [:Pronoun :Verb],
-           :proClass [:Independent],
-           :tam [:Dependent :General :Imperative :Imperfect :Perfect :ShortPast :VerbalNoun :_NA],
-           :verbMorphClass [:DervStemMarker :NonCrnlDrop :StemFormation],
-           :verbType [:Finite :VerbalNoun],
-           :vmorphClass [:Finite :CAUS2STEM :CAUSINTENS :FiniteStemFormationBase :FiniteStemFormationStative :VBASENASALEXT :VCAUSSTEM :VSUFFDERVPATTERNS :VSUFFMIDDLE]
-           }
+:schemata {:lexeme [:al  :arig :as :at :ba :badab :beeb :bolob :buoi :cir :dab :deerne :dic :dok :dunguk :edeb :eeb :ef :faag :feen :feffik :fuor :fur :gee :geesh :geget :gewuk :guk :guol :gush :iddik :iif :ik :im :kee :kom :kuf :lab :ongornob :raf :rok :saanik :shuun :si :sue :ufuk :veer],
+ :case [:Absolutive :Object :Possessive :Subject :Verbal],
+ :conjClass [:Prefix :Suffix],
+ :derivedStem [:Base :Inchoative :S :S2 :S_Intens :Stative :T :T2],
+ :derivedStemAug [:Common :Intensive :Neutral],
+ :emphasis [:Emphatic :Non_Emphatic],
+ :extended [:Common :DExtClass :Long :Nasal :Plain :Reduced :ReducedNasal :Suppletive],
+ :formType [:Stem :Suffix],
+ :gender [:Common :Fem :Masc :_NA],
+ :number [:Common :Plural :Singular :_NA],
+ :pdgmSubType [:DervPatterns],
+ :person [:Common :Invar :Person1 :Person1ex :Person1in :Person2 :Person3 :_NA],
+ :polarity [:Affirmative :Common :Negative :_NA],
+ :pos [:Pronoun :Verb],
+ :proClass [:Independent],
+ :tam [:Dependent :General :Imperative :Imperfect :Perfect :ShortPast :VerbalNoun :_NA],
+ :verbMorphClass [:DervStemMarker :NonCrnlDrop :StemFormation],
+ :verbType [:Finite :VerbalNoun],
+ :vmorphClass [:CAUS2STEM :CAUSINTENS :Finite :FiniteStemFormationBase :FiniteStemFormationStative :VBASENASALEXT :VCAUSSTEM :VSUFFDERVPATTERNS :VSUFFMIDDLE]
+ }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam],
           :inflClass [:conjClass],
@@ -9876,7 +9877,7 @@
                             }
                            {:label "dhaasanac-PInd"
                             :note "Tosco2001b-p. 211; cf. 5.2 & 5.2.2.1 (pp. 212-214) on gáal "
-                            :common {:pos :Pronoun,
+                            :common {:pos :Pronoun, :pmorphClass :ProMorph,
                                      :proClass :Independent}
                             :terms [[:case :emphasis :number :person :token],
                                     [:Subject :Non_Emphatic :Singular :Person2 "kúo"],
